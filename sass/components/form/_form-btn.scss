@@ -1,0 +1,16 @@
+.form__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--accent-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-hover-focus);
+    }
+}
