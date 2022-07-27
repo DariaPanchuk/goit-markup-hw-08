@@ -10,19 +10,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 63px 24px;
+    padding: 77px 24px;
 
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--primary-bg-color);
 
-    background-color: var(--accent-color);
+    background-color: rgba(33, 150, 243, 0.9);
 
     transition: transform var(--anim);
 
     .works__item:hover & {
         transform: translateY(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px 24px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
     }
 }
 
