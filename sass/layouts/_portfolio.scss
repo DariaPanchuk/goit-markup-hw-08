@@ -3,6 +3,7 @@
 
     @media screen and (min-width: 768px) {
         --item: 2;
+
     }
     
     @media screen and (min-width: 1200px) {
@@ -18,10 +19,24 @@
     }
 }
 
+.works__link {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;         
+    }
+}
+
 .works__desc {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+
+    @media screen and (min-width: 768px) {
+        &--grow{
+            flex-grow: 1;
+        }
+    }
 }
 
 .works__title {

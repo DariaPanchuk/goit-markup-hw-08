@@ -4,23 +4,43 @@
         url(../images/page-1/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--footer-color);
-
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero__title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.7;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-bg-color);
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        line-height: 1.6;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.7;
+    }
 }
