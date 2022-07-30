@@ -5,28 +5,36 @@
 }
 
 .footer__list {
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         align-items: baseline;
+        justify-content: flex-start;
         flex-wrap: nowrap;
     }
 }
 
 .footer__info {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        text-align: left;
+    }
 }
 
 .footer__logo {
@@ -36,22 +44,32 @@
 
 .address {
     &:not(:last-child) {
-    margin-bottom: 9px;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+        margin-bottom: 9px;
+        }
     }
 }
 
 .address__location {
-    display: block;
-    width: 231 px;
+    width: 100%;
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--primary-bg-color);
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        width: 231px;
+    }
 }
 
 .address__contact {
     display: block;
-    width: 231px;
+    width: 100%;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -62,10 +80,24 @@
     &:focus {
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+    }
 }
 
 .footer__links {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 93px;
+    }
 }
 
 .footer__social-media {
