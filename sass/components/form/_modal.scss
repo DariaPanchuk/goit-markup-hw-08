@@ -6,12 +6,17 @@
 
     z-index: 1000;
 
-    width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
 
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal-btn {
@@ -60,6 +65,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.5;
+    }
 }
 
 .form-list-item {
@@ -84,15 +93,22 @@
 .modal-form-field {
     width: 100%;
     height: 40px;
-    padding: 12px 15px 12px 42px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    padding: 11px 12px 11px 42px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
     color: var(--title-text-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
     transition: outline var(--anim), border-color var(--anim);
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 15px 12px 42px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    }
 }
 
 .modal-form-field-comment {
@@ -116,6 +132,11 @@ textarea {
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 1.7;
+    }
 }
 
 .modal-form-field:focus,
@@ -165,6 +186,18 @@ textarea {
     fill: var(--primary-bg-color);
 }
 
+.checkbox-text {
+    font-size: 12px;
+    line-height: 1.7px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
+}
+
 .agreement {
     text-decoration-line: underline;
     color: var(--accent-color);
@@ -173,4 +206,9 @@ textarea {
 .btn-checkbox {
     margin-right: 124px;
     margin-left: 124px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 164px;
+        margin-left: 164px;
+    }
 }
